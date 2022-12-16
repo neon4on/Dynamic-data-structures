@@ -1,45 +1,32 @@
 ﻿#include <iostream>
-#include <cstring>
+#include <new>
 using namespace std;
 
-void check(int* i, int* steck) {
-    setlocale(LC_ALL, "rus");
-    cout << endl << "Это верхний элемент стека: " << steck[*i] << endl;
+class Stack
+{
+public:
+    Stack();
+    ~Stack();
+
+private:
+    template<typename T>
+    class Node
+    {
+    public:
+        Node* pNext;
+        T data;
+        Node(T data, Node* pNext = nullptr)
+        {
+            this->data = data;
+            this->pNext = pNext;
+        }
+    };
+};
+void main()
+{
+
 }
-
-void deletee(int *i) {
-    cout << "Удалили верхний элемент" << endl;
-    i--;
-}
-
-void Vivod(int i, int* steck) {
-    for (int j = 0; j < i; j++) {
-        cout << steck[j] << " ";
-    }
-}
-
-int main() {
-    setlocale(LC_ALL, "rus");
-    int n = 0;
-    int k = 0; //Первоначально машин
-    int i = -1; 
-    int dj = 0;
-    cout << "Введите количество машин: "; 
-    cin >> k;
-    int steck[20];
-
-    for (int j = 0; j < k; j++) {
-        int a;
-        cin >> a;
-        i++;  
-        steck[i] = a;  // добавляем в стек элемент
-    }
-
-    if (i == -1) {
-        cout << "Стек пуст";
-    }
-    else {
-        do {
+/*do {
             cout << "Меню:" << endl;
             cout << "1. Приехала новая машина" << endl;
             cout << "2. Печатать гараж" << endl;
@@ -55,6 +42,4 @@ int main() {
             case 3: Print(u); vyezjaet_iz_garaja(&u); break;
             case 0: Clear(&u); break;
             default:cout << "Такого выбора нет :) " << endl;
-            }
-    }
-}
+            }*/

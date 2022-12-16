@@ -1,2 +1,3 @@
 ﻿  Dynamic data structures.cpp
+C:\Users\Rush\Desktop\Valeriy Kamenskih AISTbd-11\Dynamic data structures\Dynamic data structures.cpp(169,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
   Dynamic data structures.vcxproj -> C:\Users\Rush\Desktop\Valeriy Kamenskih AISTbd-11\Dynamic data structures\x64\Debug\Dynamic data structures.exe
