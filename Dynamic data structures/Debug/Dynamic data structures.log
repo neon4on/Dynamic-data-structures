@@ -1,0 +1,4 @@
+﻿  Dynamic data structures.cpp
+C:\Users\stydent\Каменских Валерий\Dynamic data structures\Dynamic data structures.cpp(110,26): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stydent\Каменских Валерий\Dynamic data structures\Dynamic data structures.cpp(98): warning C4715: Stack<int>::operator[]: значение возвращается не при всех путях выполнения
+  Dynamic data structures.vcxproj -> C:\Users\stydent\Каменских Валерий\Dynamic data structures\Debug\Dynamic data structures.exe
