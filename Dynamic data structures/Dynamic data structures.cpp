@@ -11,7 +11,7 @@ public:
 
     void pop_front();
     void push_back(T data); //Добавление элемента в конец списка
-
+    void clear();
     int GetSize() //Возвращает количество элементов
     {
         return(Size);
@@ -82,6 +82,15 @@ void Stack<T>::push_back(T data)
 }
 
 template<typename T>
+void Stack<T>::clear()
+{
+    while (Size)
+    {
+        pop_front();
+    }
+}
+
+template<typename T>
 T& Stack<T>::operator[](const int index)
 {
     int counter = 0;
@@ -129,5 +138,8 @@ int main()
 
 
     cout << endl << "Count: " << lst.GetSize() << endl;
+    lst.clear();
+    cout << endl << "Count: " << lst.GetSize() << endl;
     return 0;
 }
+ 
